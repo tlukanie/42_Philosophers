@@ -6,7 +6,7 @@
 /*   By: tlukanie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 14:34:06 by tlukanie          #+#    #+#             */
-/*   Updated: 2023/07/23 15:42:21 by tlukanie         ###   ########.fr       */
+/*   Updated: 2023/07/23 16:03:25 by tlukanie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static void	set_stop_flag(t_table *table, bool state)
 {
 	pthread_mutex_lock(&table->stop_status_mutex);
-		table->stop_status = state;
+	table->stop_status = state;
 	pthread_mutex_unlock(&table->stop_status_mutex);
 }
 

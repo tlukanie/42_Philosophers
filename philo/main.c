@@ -6,7 +6,7 @@
 /*   By: tlukanie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 14:33:54 by tlukanie          #+#    #+#             */
-/*   Updated: 2023/07/23 15:44:09 by tlukanie         ###   ########.fr       */
+/*   Updated: 2023/07/23 16:09:31 by tlukanie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,7 @@ int	main(int argc, char **argv)
 		printf("\033[1mUsage: ./philo 1)number_of_philo 2)time_to_die \
 		3)time_to_eat\n4)time_to_sleep 5)number_of_times_each_philosopher_must_eat\
 		(optional argument)\033[0m\n");
-		exit(1);
+		return (1);
 	}
 	if (!check_input(argc, argv))
 		return (1);

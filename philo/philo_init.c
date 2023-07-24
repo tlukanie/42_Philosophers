@@ -60,6 +60,7 @@ static t_philo	**init_philos(t_table *table)
 		philos[i]->table = table;
 		philos[i]->id = i;
 		philos[i]->ate_count = 0;
+		philos[i]->last_meal = ms_time();
 		set_forks(philos[i]);
 		i++;
 	}
